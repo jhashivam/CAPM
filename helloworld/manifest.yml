@@ -1,0 +1,5 @@
+applications:
+- name: shivam
+  buildpacks:
+    - go_buildpack
+  random-route: true
