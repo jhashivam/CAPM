@@ -9,7 +9,9 @@ import (
 
 // IndexHandler returns a simple message
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Congratulations Shivam Jha!\nWelcome to CAPAM Traning.\nThis is first app deployed using CAPAM.")
+	fmt.Fprintf(w, "Congratulations Shivam Jha!\nWelcome to CAPAM Traning.\n
+					This is first app deployed using CAPAM."
+				)
 }
 
 func main() {
