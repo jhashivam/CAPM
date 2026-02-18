@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humpty Dumpty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .wall {
+            width: 400px;
+            height: 200px;
+            background: linear-gradient(90deg, #8B4513 0%, #A0522D 50%, #8B4513 100%);
+            margin: 0 auto;
+            border: 3px solid #654321;
+            position: relative;
+        }
+        
+        .humpty {
+            width: 120px;
+            height: 150px;
+            background: linear-gradient(180deg, #fff8dc 0%, #f5deb3 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 3px solid #333;
+        }
+        
+        .face {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .eyes {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .eye {
+            width: 15px;
+            height: 15px;
+            background: black;
+            border-radius: 50%;
+            animation: blink 3s infinite;
+        }
+        
+        .mouth {
+            width: 40px;
+            height: 20px;
+            border: 3px solid black;
+            border-top: none;
+            border-radius: 0 0 40px 40px;
+            margin-top: 10px;
+        }
+        
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 75px;
+            border-radius: 50% 50% 50% 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .balloon:before {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            width: 2px;
+            height: 30px;
+            background: #333;
+        }
+        
+        .balloon1 { background: #ff6b6b; top: 50px; left: 10%; animation-delay: 0s; }
+        .balloon2 { background: #4ecdc4; top: 100px; left: 20%; animation-delay: 0.5s; }
+        .balloon3 { background: #ffe66d; top: 150px; right: 20%; animation-delay: 1s; }
+        .balloon4 { background: #95e1d3; top: 80px; right: 10%; animation-delay: 1.5s; }
+        
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        
+        .poem {
+            color: white;
+            font-size: 1.2em;
+            margin-top: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes blink {
+            0%, 90%, 100% { height: 15px; }
+            95% { height: 2px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>🥚 Humpty Dumpty 🥚</h1>
+    
+    <div class="container">
+        <div class="balloon balloon1"></div>
+        <div class="balloon balloon2"></div>
+        <div class="balloon balloon3"></div>
+        <div class="balloon balloon4"></div>
+        
+        <div class="wall">
+            <div class="humpty">
+                <div class="face">
+                    <div class="eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="poem">
+        <p>Humpty Dumpty sat on a wall,</p>
+        <p>Humpty Dumpty had a great fall!</p>
+        <p>All the king's horses and all the king's men,</p>
+        <p>Couldn't put Humpty together again! 🎈</p>
+    </div>
+</body>
+</html>

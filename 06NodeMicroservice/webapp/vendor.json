@@ -1,0 +1,44 @@
+{
+    "vendors": [
+        {
+            "id": "V001",
+            "name": "Tech Solutions Inc",
+            "email": "contact@techsolutions.com",
+            "phone": "+1-555-0123",
+            "address": "123 Silicon Valley, CA 94025",
+            "status": "active"
+        },
+        {
+            "id": "V002",
+            "name": "Global Supplies Ltd",
+            "email": "info@globalsupplies.com",
+            "phone": "+1-555-0456",
+            "address": "456 Business Park, NY 10001",
+            "status": "active"
+        },
+        {
+            "id": "V003",
+            "name": "Manufacturing Pro",
+            "email": "sales@manufacturingpro.com",
+            "phone": "+1-555-0789",
+            "address": "789 Industrial Ave, TX 75001",
+            "status": "active"
+        },
+        {
+            "id": "V004",
+            "name": "Office Essentials Co",
+            "email": "orders@officeessentials.com",
+            "phone": "+1-555-0321",
+            "address": "321 Commerce St, FL 33101",
+            "status": "inactive"
+        },
+        {
+            "id": "V005",
+            "name": "Premium Services Group",
+            "email": "support@premiumservices.com",
+            "phone": "+1-555-0654",
+            "address": "654 Enterprise Blvd, WA 98101",
+            "status": "active"
+        }
+    ]
+}

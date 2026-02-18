@@ -1,0 +1,22 @@
+{
+  "name": "06nodemicroservice",
+  "version": "1.0.0",
+  "description": "my life first node microservice",
+  "keywords": [
+    "nodejs",
+    "btp",
+    "capm",
+    "microservice"
+  ],
+  "license": "ISC",
+  "author": "anubhav",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
