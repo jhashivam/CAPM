@@ -6,7 +6,7 @@ const app = express();
 
 //Define a handler to handle HTTP GET request
 app.get('/', (req, res) => {
-    res.send('Hello Welcome to Anubhav Trainings!');
+    res.send('Hello Welcome Shivam Jha!');
 });
 
 //Serve static files from the 'webapp' directory - whole directory on internet
