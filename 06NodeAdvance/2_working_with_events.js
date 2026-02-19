@@ -33,7 +33,7 @@ pikachu.emit('jump', 5);
 
 
 
-////// Ctrl+/ to comment and uncomment multiple lines //////
+/// Ctrl+/ to comment and uncomment multiple lines ///
 
 // //Create an instance of EventEmitter
 // const anubhav = new events.EventEmitter();
