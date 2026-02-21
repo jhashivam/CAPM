@@ -5,7 +5,8 @@ const reuse = require('./util/reuse');
 let employees = [
     { name: "John", salary: 50000, email: "john@example.com" },
     { name: "Jane", salary: 60000, email: "jane@example.com" },
-    { name: "Doe", salary: 55000, email: "duo@example.com" }
+    { name: "Doe", salary: 55000, email: "duo@example.com" },
+    { name: "Leo", salary: 75000, email: "leo@example.com" }
 ];
 
 reuse.increaseSalaryV3(employees, 10);
